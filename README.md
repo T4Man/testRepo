@@ -30,7 +30,7 @@ npm install --save waka-flocka-frame
 ```var wff = require('waka-flocka-frame')```
 
 --------------------
-###Code to quickly set up a http server
+Code to quickly set up a http server
 ```
 var wff = require('waka-flocka-frame');
 
@@ -38,7 +38,7 @@ wff.server.listen([optional port number]);
 ```
 Leaving out the port number will invoke the default port 3000.
 
-###Code to quickly set up a simple route.
+<h3>Code to quickly set up a simple route.</h3>
 ```
 wff.router.get('/home', 'a text string');
 ```
@@ -56,7 +56,7 @@ wff.router.get('/home', function(){
     res.end();
   });
 ```
-<h4>Code to quickly set up a static route.</h4>
+<h3>Code to quickly set up a static route.</h3>
 ```
 wff.router.getStatic('someFolder/someText.txt', '/test');
 ```
@@ -67,7 +67,7 @@ wff.router.getStatic('[your file path]', '[your route]');
 ```
 Parameters are a path to a resource and a route.
 
-###Code to quickly set up a POST route without a callback.
+<h3>Code to quickly set up a POST route without a callback.</h3>
 ```
 wff.router.post('/myBlog');
 ```
@@ -78,7 +78,7 @@ wff.router.post('[url you are posting to]');
 ```
 Parameter is the route you are posting to.
 
-###Example of a POST route with an optional callback.
+<h3>Example of a POST route with an optional callback.</h3>
 ```
 wff.router.post('/postUrl', function(req, res) {
   res.writeHead(200, { 'Content-Type': 'application/json' });
