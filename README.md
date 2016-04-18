@@ -78,7 +78,7 @@ wff.router.post('[url you are posting to]');
 ```
 Parameter is the route you are posting to.
 
-###Code to create a POST route with an optional callback.
+###Example of a POST route with an optional callback.
 ```
 wff.router.post('[url you are posting to]', function(req, res){
   var concatData = '';
