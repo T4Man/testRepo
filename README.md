@@ -56,7 +56,7 @@ wff.router.get('/home', function(){
     res.end();
   });
 ```
-<h4>ode to quickly set up a static route.</h4>
+<h4>Code to quickly set up a static route.</h4>
 ```
 wff.router.getStatic('someFolder/someText.txt', '/test');
 ```
