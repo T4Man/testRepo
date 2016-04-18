@@ -80,7 +80,7 @@ Parameter is the route you are posting to.
 
 ###Example of a POST route with an optional callback.
 ```
-wff.router.post('/posturl', function(req, res) {
+wff.router.post('/postUrl', function(req, res) {
   res.writeHead(200, { 'Content-Type': 'application/json' });
    req.on('data', (data) => {
      var path = 'data/' + Date() + '.json';
