@@ -31,8 +31,7 @@ A simple http framework to take mundane out of the mundane. Quickly create a bas
 --------------------
 ###Example code to quickly set up a http server
 ```var wff = require('waka-flocka-frame');```
-
-  ```wff.server.listen();```
+```wff.server.listen();```
 
 Syntax is ```wff.server.listen([optional port number]);```
 Leaving out the port number will invoke the default port 3000.
