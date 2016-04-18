@@ -30,29 +30,23 @@ A simple http framework to take mundane out of the mundane. Quickly create a bas
 ```var wwf = require('waka-flocka-frame')```
 
 --------------------
-###Example code to quickly set up a http server
+###Code to quickly set up a http server
 ```
 var wff = require('waka-flocka-frame');
-wff.server.listen();
-```
 
-Syntax is
-```
 wff.server.listen([optional port number]);
 ```
 Leaving out the port number will invoke the default port 3000.
 
+###Code to quickly set up a simple route.
 ```
-var wff = require('waka-flocka-frame');
-
-wff.server.listen();
+wff.router.get('/home', 'a text string');
 ```
-
-###Example code to quickly set up a simple route.
-Syntax is ```wff.router.get( '[your route]', '[a text string]');```
 Parameters are a route and a simple text string you would like
 in your response.
-```wff.router.get('/home', 'a text string');```
+ ```
+ wff.router.get( '[your route]', '[a text string]');
+ ```
 This will return 'a text string' at the '/home' route.
 If you want a response other than plain text you MUST use a callback
 and response.writeHead.
