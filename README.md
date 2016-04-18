@@ -42,16 +42,20 @@ Leaving out the port number will invoke the default port 3000.
 ```
 wff.router.get('/home', 'a text string');
 ```
-Parameters are a route and a simple text string you would like
-in your response.
+This will return 'a text string' at the '/home' route.
+Syntax:
  ```
  wff.router.get( '[your route]', '[a text string]');
  ```
-This will return 'a text string' at the '/home' route.
 If you want a response other than plain text you MUST use a callback
 and response.writeHead.
-
-
+```
+wff.router.get('/home', function(){
+    res.writeHead(200, {'Content-Type': 'application/json');
+    res.write(JSON.stringify({"msg": "my message"}));
+    res.end();
+  });
+```
 ###Example code to quickly set up a static route.
 Syntax is ```wff.router.getStatic('[your resource]', '[your route]');```
 Parameters are a path to a resource and a route.
