@@ -14,7 +14,7 @@ A simple http framework to take mundane out of the mundane. Quickly create a bas
 </ul>
 
 <h2>How to use the WWF framework</h2>
-=====================
+-------------
 <h3>Installation</h3>
 -------------
 <h4>Initialize your local repository</h4>
@@ -32,7 +32,7 @@ A simple http framework to take mundane out of the mundane. Quickly create a bas
 --------------------
 ###Example code to quickly set up a http server
 ```var wff = require('waka-flocka-frame');```
-   wff.server.listen();```
+```wff.server.listen();```
 
 Syntax is
 ```wff.server.listen([optional port number]);```
