@@ -4,36 +4,38 @@
 
 A simple http framework to take mundane out of the mundane. Quickly create a basic http server with essential router functions by typing just a few lines of code.
 
-##Features<ul>
+<h2>Features</h2>
+<ul>
  <li>HTTP Server</li>
  <li>REST request, response</li>
  <li>GET</li>
  <li>POST</li>
  <li>Automatic Content-Type Detection for Headers</li>
- </ul>
+</ul>
 
-##How to use the WWF framework
+<h2>How to use the WWF framework</h2>
 =====================
-###Installation
+<h3>Installation</h3>
 -------------
-<p>Initialize your local repository</p>
+<h4>Initialize your local repository</h4>
   ```npm init```
 
-<p>Install WFF</p>
+<h4>Install WFF</h4>
   ```npm install --save```
 
 ```npm install waka-flocka-frame```
 
-<p>Then require ('waka-flocka-frame') in your project.</p>
+<h4>Then require ('waka-flocka-frame') in your project.</h4>
 
 ```var wwf = require('waka-flocka-frame')```
 
 --------------------
 ###Example code to quickly set up a http server
 ```var wff = require('waka-flocka-frame');```
-```wff.server.listen();```
+   wff.server.listen();```
 
-Syntax is ```wff.server.listen([optional port number]);```
+Syntax is
+```wff.server.listen([optional port number]);```
 Leaving out the port number will invoke the default port 3000.
 
 ```var wff = require('waka-flocka-frame');```
